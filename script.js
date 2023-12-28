@@ -1,3 +1,9 @@
+var users = {
+  'admin': 'admin',
+  'user2': 'password2'
+};
+
+
 // Obtener el formulario de inicio de sesión
 const loginForm = document.getElementById('loginForm');
 
@@ -10,7 +16,7 @@ loginForm.addEventListener('submit', function(e) {
   const password = document.getElementById('password').value;
 
   // Realizar la validación (puedes agregar tu propia lógica aquí)
-  if (username === 'admin' && password === 'admin') {
+  if (username in users && users[username] === password){
     // Iniciar sesión exitosamente
 
     window.location.href = 'pagina_principal.html';
@@ -22,8 +28,13 @@ loginForm.addEventListener('submit', function(e) {
 
 // Función para cerrar sesión
 function cerrarSesion() {
-  alert('Estas Apunto de Finalizar tu Sesion');
-  // Realizar cualquier lógica necesaria para cerrar la sesión
-  // Redirigir a la página de inicio de sesión
+
+ localStorage.removeItem('loggedIn');
+alert('Has cerrado la sesión.');
   window.location.href = 'index.html';
-}
+  window.history.forward();
+ 
+  }
+
+
+  

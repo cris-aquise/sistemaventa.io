@@ -30,7 +30,7 @@ input[type="password"] {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 3px;
-  background-color: #647A41;
+  
 }
 
 button {
@@ -47,3 +47,16 @@ button {
 button:hover {
   background-color: #1D8FE0;
 }
+
+.admin-contact {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.8em;
+      color: #888;
+    }
+    .admin-contact a {
+      color: #007BFF;
+    }
+    .admin-contact a:hover {
+      color: #0056b3;
+    }

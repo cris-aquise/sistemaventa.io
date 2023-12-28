@@ -3,6 +3,7 @@
 <head>
   <title>Sistema de Inicio de Sesión</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <h1>Iniciar Sesión</h1>
@@ -13,9 +14,15 @@
     <label for="password">Contraseña:</label>
     <input type="password" id="password" name="password" required>
     <br>
-    <button type="submit">Iniciar Sesión</button>
+    <button id="loginButton">
+  <i class="fas fa-sign-in-alt"></i> Iniciar sesión
+   
+  </div>
+</button>
+<p class="admin-contact">¿Problemas para iniciar sesión? <a href="#">Contactar con el administrador</a></p>
   </form>
 
   <script src="script.js"></script>
+ 
 </body>
 </html>
